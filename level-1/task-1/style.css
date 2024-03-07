@@ -1,0 +1,473 @@
+/* Global Styles */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #202020;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  margin-left: 5px;
+  font-size: 1.6rem;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #03a9f4;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+
+
+/* navbar */
+
+.nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  width: 20%;
+  height: 80%;
+  padding: 5px;
+  display: flex;
+  cursor: pointer;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.logo h2 {
+  font-size: 3.5rem;
+  margin: auto;
+  color: #6dd5ed;
+}
+
+.logo i {
+  width: 30%;
+  height: 90%;
+  margin-top: 10px;
+}
+
+.nav-list {
+  display: flex;
+  cursor: pointer;
+  gap: 30px;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.nav-list ul {
+  display: flex;
+  gap: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+}
+
+.signUp-btn {
+  width: 200px;
+  height: 80%;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Styling for the bars of the menu icon */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+
+/* hero section */
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid white;
+}
+
+.info {
+  text-align: left;
+  padding: 25px;
+  font-size: 3.6rem;
+}
+
+.info p {
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+#hero .signUp-btn {
+  width: 200px;
+  height: 40px;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+}
+
+.hero-img img {
+  width: 90%;
+  padding: 20px;
+}
+
+/* Feature section */
+
+#features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid white;
+}
+
+.feature-img {
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.feature-img img {
+  width: 90%;
+}
+
+.feature-info {
+  text-align: left;
+  margin-top: 30px;
+  padding: 50px;
+  font-size: 3.6rem;
+}
+
+.feature-info li {
+  font-size: 2.4rem;
+  list-style: none;
+}
+
+/* about section */
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid white;
+}
+
+.about-info {
+  text-align: left;
+  font-size: 3.6rem;
+  padding: 80px;
+}
+
+.about-info li {
+  font-size: 2.4rem;
+  list-style: disc;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* cta section */
+
+#cta {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid white;
+  position: relative;
+}
+
+.signUp-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.signUp-cta h1 {
+  font-size: 4rem;
+}
+
+.signUp-cta img {
+  width: 80%;
+}
+
+.cta-signUp {
+  position: absolute;
+  top: 150px;
+}
+
+/*  Footer  Section*/
+
+.footer-sec {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
+.footer-sec .more {
+  padding: 20px;
+}
+
+.footer-sec li {
+  list-style: disc;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer-sec h1 {
+  color: #03a9f4;
+}
+
+.footer-sec .social .contact {
+  cursor: pointer;
+}
+
+.footer-sec .more h2 {
+  color: #03a9f4;
+  font-size: 2.6rem;
+}
+
+
+/* media queries */
+
+/* media queries */
+
+@media only screen and (min-width: 1025px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* feature section */
+
+  .feature-img {
+    width: 100%;
+  }
+
+  .feature-info {
+    margin-top: 20px;
+    padding: 30px;
+  }
+
+  /* about section */
+
+  .about-info {
+    padding: 30px;
+  }
+
+  /* cta-section */
+
+  /* cta-section */
+
+  .cta-signUp {
+    top: 120px;
+  }
+
+  .signUp-cta button {
+    width: 130px;
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+
+  .menu-icon {
+    display: block;
+    padding: 20px;
+    margin-top: 15px;
+  }
+
+  .bar:hover {
+    color: #03a9f4;
+    /* New color on hover */
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  /* hero section */
+
+  #hero {
+    grid-template-columns: 1fr;
+  }
+
+  /* feature section */
+
+  #features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-info {
+    margin-top: -70px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* about section */
+
+  #about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-info {
+    padding: 30px;
+  }
+
+  .about-img img {
+    width: 80%;
+  }
+
+  /* cta-section */
+
+  .cta-signUp {
+    top: 90px;
+  }
+
+  .signUp-cta button {
+    width: 130px;
+    height: 25px;
+  }
+
+  /* footer section */
+
+  .footer-sec {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+
+  .footer-sec .more {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 40%;
+  }
+
+  .menu-icon {
+    display: block;
+    padding: 20px;
+    margin-top: 15px;
+  }
+
+  .bar:hover {
+    color: #03a9f4;
+    /* New color on hover */
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  /* hero section */
+
+  #hero {
+    grid-template-columns: 1fr;
+  }
+
+  /* feature section */
+
+  #features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-info {
+    margin-top: -70px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* about section */
+
+  #about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-info {
+    padding: 30px;
+  }
+
+  .about-img img {
+    width: 80%;
+  }
+
+  /* cta-section */
+
+  .cta-signUp {
+    top: 50px;
+  }
+
+  .signUp-cta button {
+    width: 100px;
+    height: 25px;
+  }
+
+  /* footer section */
+
+  .footer-sec {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+
+  .footer-sec .more {
+    padding: 0;
+  }
+}
